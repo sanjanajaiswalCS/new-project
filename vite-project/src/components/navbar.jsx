@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <NavLink to="/" className="text-xl font-bold text-blue-600">
+            <NavLink to="/" className="text-xl font-bold text-blue-600 hover:text-blue-700">
               At Your Service Support
             </NavLink>
           </div>
@@ -29,7 +29,9 @@ const Navbar = () => {
             </a>
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-blue-600 focus:outline-none"
+              className={`inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-blue-600 focus:outline-none transition-colors ${
+                isOpen ? 'bg-blue-100 text-blue-600' : ''
+              }`}
             >
               {isOpen ? (
                 <X className="h-6 w-6" />
@@ -44,7 +46,7 @@ const Navbar = () => {
             <NavLink 
               to="/" 
               className={({ isActive }) => 
-                `${isActive ? 'text-blue-600' : 'text-gray-600'} hover:text-blue-500`
+                `${isActive ? 'bg-blue-100 text-blue-600' : 'text-gray-600'} px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
               }
             >
               Home
@@ -52,7 +54,7 @@ const Navbar = () => {
             <NavLink 
               to="/services"
               className={({ isActive }) => 
-                `${isActive ? 'text-blue-600' : 'text-gray-600'} hover:text-blue-500`
+                `${isActive ? 'bg-blue-100 text-blue-600' : 'text-gray-600'} px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
               }
             >
               Services
@@ -60,7 +62,7 @@ const Navbar = () => {
             <NavLink 
               to="/testimonials"
               className={({ isActive }) => 
-                `${isActive ? 'text-blue-600' : 'text-gray-600'} hover:text-blue-500`
+                `${isActive ? 'bg-blue-100 text-blue-600' : 'text-gray-600'} px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
               }
             >
               Testimonials
@@ -68,7 +70,7 @@ const Navbar = () => {
             <NavLink 
               to="/contact"
               className={({ isActive }) => 
-                `${isActive ? 'text-blue-600' : 'text-gray-600'} hover:text-blue-500`
+                `${isActive ? 'bg-blue-100 text-blue-600' : 'text-gray-600'} px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
               }
             >
               Contact
@@ -84,12 +86,16 @@ const Navbar = () => {
         </div>
 
         {/* Mobile menu */}
-        <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
+        <div 
+          className={`md:hidden transition-all duration-300 ease-in-out ${
+            isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+          }`}
+        >
           <div className="px-2 pt-2 pb-3 space-y-1">
             <NavLink 
               to="/"
               className={({ isActive }) => 
-                `${isActive ? 'bg-blue-50 text-blue-600' : 'text-gray-600'} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600`
+                `${isActive ? 'bg-blue-100 text-blue-600' : 'text-gray-600'} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
               }
               onClick={() => setIsOpen(false)}
             >
@@ -98,7 +104,7 @@ const Navbar = () => {
             <NavLink 
               to="/services"
               className={({ isActive }) => 
-                `${isActive ? 'bg-blue-50 text-blue-600' : 'text-gray-600'} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600`
+                `${isActive ? 'bg-blue-100 text-blue-600' : 'text-gray-600'} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
               }
               onClick={() => setIsOpen(false)}
             >
@@ -107,7 +113,7 @@ const Navbar = () => {
             <NavLink 
               to="/testimonials"
               className={({ isActive }) => 
-                `${isActive ? 'bg-blue-50 text-blue-600' : 'text-gray-600'} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600`
+                `${isActive ? 'bg-blue-100 text-blue-600' : 'text-gray-600'} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
               }
               onClick={() => setIsOpen(false)}
             >
@@ -116,7 +122,7 @@ const Navbar = () => {
             <NavLink 
               to="/contact"
               className={({ isActive }) => 
-                `${isActive ? 'bg-blue-50 text-blue-600' : 'text-gray-600'} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600`
+                `${isActive ? 'bg-blue-100 text-blue-600' : 'text-gray-600'} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
               }
               onClick={() => setIsOpen(false)}
             >

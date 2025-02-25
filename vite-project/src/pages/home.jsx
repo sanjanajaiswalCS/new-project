@@ -14,7 +14,7 @@ const Home = () => {
       id: 'story',
       title: 'Our Story',
       content: 'Founded on the principles of quality, integrity, and customer satisfaction, At Your Service Support has been serving the community for 10 years. Our journey began with a simple goal: to provide reliable and efficient home appliance solutions that make life easier.',
-      image: 'https://images.unsplash.com/photo-1586883573499-893ef3c99bf2?auto=format&fit=crop&q=80&w=800',
+      image: 'https://5.imimg.com/data5/JF/FW/MY-30394071/ac-installation-services-500x500.jpg',
       reverse: true
     },
     {
@@ -27,7 +27,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 overflow-hidden lg:px-8 py-12">
       <section className="text-center mb-16">
         <h1 className="text-4xl font-bold text-gray-900 mb-6">
           Welcome to Customer Service Support

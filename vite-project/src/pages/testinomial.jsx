@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star } from 'lucide-react';
+import { Phone } from "lucide-react";
 
 const Testimonials = () => {
   const testimonials = [
