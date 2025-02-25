@@ -26,7 +26,7 @@ const Contact = () => {
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Service Areas",
-      content: "Mumbai, Andheri, Navi Mumbai, and nearby areas",
+      content: "All Over Mumbai",
       special: true
     }
   ];
