@@ -66,16 +66,6 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
-
-      <div className="mt-16 text-center">
-        <a
-          href="tel:18002022413"
-          className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
-        >
-          <Phone className="h-5 w-5" />
-          Join our satisfied customers
-        </a>
-      </div>
     </div>
   );
 };
