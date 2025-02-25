@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Phone } from 'lucide-react';
 import Navbar from './components/navbar';
 import Home from './pages/home';
-import Services from './pages/Services';
+import Services from './pages/services';
 import Testimonials from './pages/testinomial';
-import Contact from './pages/Contact';
+import Contact from './pages/contact';
 import Footer from './components/footer';
 function App() {
   return (
