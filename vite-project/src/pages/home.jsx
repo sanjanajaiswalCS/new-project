@@ -5,7 +5,7 @@ const Home = () => {
   const sections = [
     {
       id: 'about',
-      title: 'At Our Air Conditioner Service Center',
+      title: '',
       content: 'We pride ourselves on being the go-to destination for all air conditioner needs. Our state-of-the-art facility, combined with our team of expert technicians, enables us to provide top-notch repair, maintenance, and installation services for all types of air conditioning units.',
       image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=800',
       reverse: false
@@ -30,10 +30,10 @@ const Home = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 overflow-hidden lg:px-8 py-12">
       <section className="text-center mb-16">
         <h1 className="text-4xl font-bold text-gray-900 mb-6">
-          Welcome to Air Conditioner Service Support
+          Welcome to Customer Service Support
         </h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Your trusted partner for all air conditioning solutions
+          Your trusted partner for  air conditioning solutions
         </p>
       </section>
 
