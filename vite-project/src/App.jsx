@@ -5,9 +5,16 @@ import Navbar from './components/navbar';
 import Home from './pages/home';
 import Services from './pages/services';
 import Testimonials from './pages/testinomial';
-import Contact from './pages/contact';
+import Contact from './pages/Contact';
 import Footer from './components/footer';
+import Brand from './pages/Brand';
+
+
 function App() {
+  const brands = [
+    "Voltas", "Daikin", "Samsung", "Haier", "Panasonic", "Blue Star",
+    "Carrier", "Godrej", "LG", "Lloyd"
+  ];
   return (
     <Router>
       <div className="min-h-screen bg-gray-50 overflow-x-hidden  max-w-full">
@@ -17,6 +24,9 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/washingmachine/:name" element={<Contact />} />
+          <Route path="/daikin" element={<Brand />} />
+          <Route path="/:brandname" element={<Brand />} />
         </Routes>
         <Footer />
         

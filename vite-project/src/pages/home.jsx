@@ -5,7 +5,7 @@ const Home = () => {
   const sections = [
     {
       id: 'about',
-      title: 'What We Do ',
+      title: 'What We Do',
       content: 'We pride ourselves on being the go-to destination for all air conditioner needs. Our state-of-the-art facility, combined with our team of expert technicians, enables us to provide top-notch repair, maintenance, and installation services for all types of air conditioning units.',
       image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=800',
       reverse: false
