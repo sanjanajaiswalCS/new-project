@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "./", // Ensures correct asset loading
   build: {
     outDir: 'build', // Specify the output directory as 'build'
   },
