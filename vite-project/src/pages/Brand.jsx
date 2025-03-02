@@ -1,6 +1,6 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
-
 const Brand = () => {
   const { brandname } = useParams();
 
@@ -32,7 +32,18 @@ const Brand = () => {
 
   return (
     <div style={{ maxWidth: "900px", margin: "auto", padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      
+      <Helmet>
+        <title>{`${formattedBrandName}AC Repair: Fast Service | 1800-202-2413 | Trusted Experts`}</title>
+        <meta 
+          name="description" 
+          content={`Need ${formattedBrandName}AC repair now? Call 1800-202-2413 for quick, reliable service. Certified technicians, genuine parts, and guaranteed satisfaction.`} 
+        />
+        <meta 
+          name="keywords" 
+          content="AC repair, AC services, Samsung AC repair, LG AC service, Voltas AC maintenance, Daikin AC technician, Symphony cooling solutions, Hitachi air conditioner repair, Carrier AC service, Mitsubishi AC experts, Bluestar AC support, Whirlpool AC installation, Lloyd AC fixing, Godrej AC solutions, IFB air cooling repair, Haier AC maintenance, best AC service near me, 24/7 AC repair" 
+        />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       {/* Beautiful Brand Name */}
       <h1 style={{ textAlign: "center", fontSize: "36px", fontWeight: "bold", marginBottom: "20px", color: "#333" }}>
         {formattedBrandName} AC Service & Repair

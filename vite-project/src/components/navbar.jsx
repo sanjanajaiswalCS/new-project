@@ -21,9 +21,10 @@ const Navbar = () => {
     "Lloyd",
     "Godrej",
     "Ifb",
-    "Haier"
+    "Haier",
   ];
-  
+
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -81,26 +82,16 @@ const Navbar = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"
-                } px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
+                `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"} px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
               }
             >
               Home
             </NavLink>
-            <NavLink
-              to="/services"
-              className={({ isActive }) =>
-                `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"
-                } px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
-              }
-            >
-              Services
-            </NavLink>
+
             <NavLink
               to="/testimonials"
               className={({ isActive }) =>
-                `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"
-                } px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
+                `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"} px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
               }
             >
               Testimonials
@@ -108,27 +99,34 @@ const Navbar = () => {
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={toggleDropdown}
-                className="flex items-center px-3 py-2 rounded-md text-gray-600 hover:bg-blue-200 transition-colors"
+                className={`flex items-center w-full px-3 py-2 rounded-md transition-colors ${isDropdownOpen ? "bg-blue-100 text-blue-600" : "text-gray-600 hover:bg-blue-50 hover:text-blue-600"
+                  }`}
               >
-                Brand services
+                       <NavLink
+              to="/services"
+             
+            >
+              Services
+            </NavLink>
                 <ChevronDown
                   className={`ml-1 h-4 w-4 transition-transform ${isDropdownOpen ? "rotate-180" : ""
                     }`}
                 />
               </button>
+
               {isDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md border z-10">
+                <div className="absolute left-0 mt-2 bg-white shadow-md rounded-md w-48 py-2">
                   {brands.map((brand) => (
-                    <div
+                    <NavLink
                       key={brand}
+                      to={`/${brand.toLowerCase()}`}
+                      className="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 cursor-pointer text-base font-medium"
                       onClick={() => {
-                        navigate(`/${brand.toLowerCase()}`);
                         setIsDropdownOpen(false);
                       }}
-                      className="px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 cursor-pointer"
                     >
                       {brand}
-                    </div>
+                    </NavLink>
                   ))}
                 </div>
               )}
@@ -136,8 +134,7 @@ const Navbar = () => {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"
-                } px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
+                `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"} px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
               }
             >
               Contact
@@ -161,28 +158,17 @@ const Navbar = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"
-                } block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
+                `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
               }
               onClick={() => setIsOpen(false)}
             >
               Home
             </NavLink>
-            <NavLink
-              to="/services"
-              className={({ isActive }) =>
-                `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"
-                } block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
-              }
-              onClick={() => setIsOpen(false)}
-            >
-              Services
-            </NavLink>
+            
             <NavLink
               to="/testimonials"
               className={({ isActive }) =>
-                `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"
-                } block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
+                `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
               }
               onClick={() => setIsOpen(false)}
             >
@@ -194,32 +180,47 @@ const Navbar = () => {
                 className={`flex items-center px-3 py-2 rounded-md transition-colors ${isDropdownOpen ? "bg-blue-100 text-blue-600" : "text-gray-600 hover:bg-blue-50 hover:text-blue-600"
                   }`}
               >
-                Brand services
+                    <NavLink
+              to="/services"
+             
+            >
+              Services
+            </NavLink>
                 <ChevronDown
-                  className={`ml-1 h-4 w-4 transition-transform ${isDropdownOpen ? "rotate-180" : ""}`}
+                  className={`ml-1 h-4 w-4 transition-transform ${isDropdownOpen ? "rotate-180" : ""
+                    }`}
                 />
               </button>
 
               {isDropdownOpen && (
                 <div className="pl-4 space-y-1 mt-1">
                   {brands.map((brand) => (
-                    <div
+                    <NavLink
                       key={brand}
-                      onClick={() => {
-                        navigate(`/${brand.toLowerCase()}`);
-                        setIsDropdownOpen(false);
-                      }}
+                      to={`/${brand.toLowerCase()}`}
                       className={({ isActive }) =>
-                        `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"
-                        } block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
+                        `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
                       }
+                      onClick={() => {
+                        setIsDropdownOpen(false);
+                        setIsOpen(false); // Close the mobile menu after navigation
+                      }}
                     >
                       {brand}
-                    </div>
+                    </NavLink>
                   ))}
                 </div>
               )}
             </div>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
+              }
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
+            </NavLink>
           </div>
         </div>
       </div>

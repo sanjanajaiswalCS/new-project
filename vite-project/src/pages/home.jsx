@@ -1,7 +1,8 @@
 import React from 'react';
 import { Phone } from 'lucide-react';
-
+import { Helmet } from 'react-helmet';
 const Home = () => {
+  
   const sections = [
     {
       id: 'about',
@@ -28,6 +29,12 @@ const Home = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 overflow-hidden lg:px-8 py-12">
+      <Helmet>
+    
+        <meta name="description" content="Need fast AC repair? Call 1800-202-2413 for 24/7 emergency service. Our licensed techs provide reliable, affordable AC solutions. Customer satisfaction guaranteed!" />
+        <meta name="keywords" content="AC repair, emergency AC service, fast AC fix, air conditioning repair, 24/7 AC service" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <section className="text-center mb-16">
         <h1 className="text-4xl font-bold text-gray-900 mb-6">
           Welcome to Customer Service Support

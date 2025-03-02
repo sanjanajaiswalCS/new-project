@@ -26,7 +26,7 @@ const Contact = () => {
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Service Areas",
-      content: "All Over Mumbai",
+      content: "Mumbai, Navi Mumbai, Thane",
       special: true
     }
   ];
