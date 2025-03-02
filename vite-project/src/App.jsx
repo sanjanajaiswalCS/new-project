@@ -5,11 +5,9 @@ import Navbar from './components/navbar';
 import Home from './pages/home';
 import Services from './pages/services';
 import Testimonials from './pages/testinomial';
-import Contact from './pages/Contact';
 import Footer from './components/footer';
 import Brand from './pages/Brand';
-
-
+import Contacts from './pages/Contacts';
 function App() {
   const brands = [
     "Voltas", "Daikin", "Samsung", "Haier", "Panasonic", "Blue Star",
@@ -23,9 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/washingmachine/:name" element={<Contact />} />
-          <Route path="/daikin" element={<Brand />} />
+          <Route path="/contact" element={<Contacts />} />
           <Route path="/:brandname" element={<Brand />} />
         </Routes>
         <Footer />

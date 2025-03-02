@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone, Mail, Clock, MapPin } from 'lucide-react';
 
-const Contact = () => {
+const Contacts = () => {
   const contactInfo = [
     {
       icon: <Phone className="h-6 w-6" />,
@@ -82,4 +82,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contacts;
