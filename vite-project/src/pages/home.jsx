@@ -7,7 +7,7 @@ const Home = () => {
       id: 'about',
       title: 'What We Do',
       content: 'We pride ourselves on being the go-to destination for all air conditioner needs. Our state-of-the-art facility, combined with our team of expert technicians, enables us to provide top-notch repair, maintenance, and installation services for all types of air conditioning units.',
-      image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=800',
+      image: 'https://acservicesmumbai.com/wp-content/uploads/2024/10/6_7_11zon.webp',
       reverse: false
     },
     {
@@ -21,7 +21,7 @@ const Home = () => {
       id: 'team',
       title: 'Our Team',
       content: 'Our team of expert technicians is the backbone of our operation. With 10+ years of combined experience, they possess the knowledge and skills to tackle even the most complex air conditioning issues.',
-      image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800',
+      image: 'https://img.freepik.com/free-photo/coworkers-servicing-hvac-system_482257-91024.jpg',
       reverse: false
     }
   ];

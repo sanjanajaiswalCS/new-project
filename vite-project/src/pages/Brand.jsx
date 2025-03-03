@@ -45,7 +45,7 @@ const Brand = () => {
       
       {/* Beautiful Brand Name */}
       <h1 style={{ textAlign: "center", fontSize: "36px", fontWeight: "bold", marginBottom: "20px", color: "#333" }}>
-        {formattedBrandName} AC Service & Repair
+        {formattedBrandName} AC Service Center
       </h1>
 
       {/* Header Section with Logo and Call Now Button */}

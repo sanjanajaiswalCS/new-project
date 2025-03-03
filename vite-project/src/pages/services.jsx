@@ -5,7 +5,7 @@ const Services = () => {
   const services = [
     {
       title: 'AC Installation',
-      image: 'https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&q=80&w=800',
+      image: 'https://www.aireserv.com/us/en-us/aire-serv/_assets/expert-tips/images/Blog/asv-blog-10-common-1.webp',
       description: 'Seamless installations tailored to your home\'s unique setup.',
       features: [
         'Assess the ideal placement for optimal cooling',
@@ -15,7 +15,7 @@ const Services = () => {
     },
     {
       title: 'AC Repair',
-      image: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&q=80&w=800',
+      image: 'https://5.imimg.com/data5/SELLER/Default/2023/3/EW/SZ/SJ/94561917/air-conditioner-maintenance-service-500x500.PNG',
       description: 'Trust over 10 years of experience for quick and lasting repairs.',
       features: [
         'Professional repairs to restore your AC\'s efficiency',
@@ -25,7 +25,7 @@ const Services = () => {
     },
     {
       title: 'AC Servicing',
-      image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&q=80&w=800',
+      image: 'https://static.vecteezy.com/system/resources/thumbnails/016/273/822/small_2x/air-conditioning-cleaning-service-with-water-spray-photo.jpg',
       description: 'Regular servicing to enhance AC efficiency.',
       features: [
         'Cleaning, refrigerant checks, and lubrication',
