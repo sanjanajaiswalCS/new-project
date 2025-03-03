@@ -95,35 +95,39 @@ const Navbar = () => {
             >
               Testimonials
             </NavLink>
-            <div className="relative" ref={dropdownRef}>
-              <button
-                onClick={toggleDropdown}
-                className={`flex items-center w-full px-3 py-2 rounded-md transition-colors ${isDropdownOpen ? "bg-blue-100 text-blue-600" : "text-gray-600 hover:bg-blue-50 hover:text-blue-600"
-                  }`}
-              >
+            <div className="relative">
+              <div className="flex items-center">
                 <NavLink
                   to="/services"
                   className={({ isActive }) =>
-                    `${isActive || isDropdownOpen ? " text-grey-600" : "text-gray-600"} px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
+                    `${isActive || isDropdownOpen ? "bg-blue-100 text-blue-600" : "text-gray-600"} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
                   }
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)} // Toggle dropdown on click
                 >
                   Services
                 </NavLink>
-                <ChevronDown
-                  className={`ml-1 h-4 w-4 transition-transform ${isDropdownOpen ? "rotate-180" : ""
-                    }`}
-                />
-              </button>
+                <button
+                  onClick={toggleDropdown}
+                  className="p-2 text-gray-600 hover:text-blue-600 focus:outline-none"
+                >
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform ${isDropdownOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+              </div>
 
               {isDropdownOpen && (
-                <div className="absolute left-0 mt-2 bg-white shadow-md rounded-md w-48 py-2 z-50">
+                <div className="pl-4 space-y-1 mt-1 bg-white shadow-md rounded-md w-full py-2 z-50">
                   {brands.map((brand) => (
                     <NavLink
                       key={brand}
                       to={`/${brand.toLowerCase()}`}
-                      className="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 cursor-pointer text-base font-medium"
+                      className={({ isActive }) =>
+                        `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
+                      }
                       onClick={() => {
                         setIsDropdownOpen(false);
+                        setIsOpen(false); // Close the mobile menu after navigation
                       }}
                     >
                       {brand}
