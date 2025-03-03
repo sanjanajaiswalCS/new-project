@@ -102,7 +102,7 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     `${isActive || isDropdownOpen ? "bg-blue-100 text-blue-600" : "text-gray-600"} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
                   }
-                  onClick={() => setIsDropdownOpen(!isDropdownOpen)} // Toggle dropdown on click
+                 
                 >
                   Services
                 </NavLink>
@@ -117,7 +117,7 @@ const Navbar = () => {
               </div>
 
               {isDropdownOpen && (
-                <div className="pl-4 space-y-1 mt-1 bg-white shadow-md rounded-md w-full py-2 z-50">
+                <div className="pl-4 space-y-1 mt-150 bg-white shadow-md rounded-md w-full py-2 z-50">
                   {brands.map((brand) => (
                     <NavLink
                       key={brand}
