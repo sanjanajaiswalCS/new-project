@@ -49,23 +49,46 @@ const Brand = () => {
       </h1>
 
       {/* Header Section with Logo and Call Now Button */}
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        {logoUrl ? (
-          <img 
-            src={logoUrl} 
-            alt={`${brandname} Logo`} 
-            style={{ width: "500px", height: "auto" }}
-          />
-        ) : (
-          <p style={{ fontSize: "20px", fontWeight: "bold" }}>Brand logo not available</p>
-        )}
-        <a 
-          href="tel:18002022413" 
-          style={{ backgroundColor: "blue", color: "white", padding: "15px 25px", fontSize: "24px", fontWeight: "bold", textDecoration: "none", borderRadius: "8px" }}
-        >
-          Call Now 18002022413
-        </a>
-      </div>
+      <div 
+  style={{ 
+    display: "flex", 
+    justifyContent: "space-between", 
+    alignItems: "center",
+    flexWrap: "wrap",  // Allows items to wrap on smaller screens
+    textAlign: "center"
+  }}
+>
+  {logoUrl ? (
+    <img 
+      src={logoUrl} 
+      alt={`${brandname} Logo`} 
+      style={{ 
+        width: "100%", 
+        maxWidth: "500px", 
+        height: "auto" 
+      }}
+    />
+  ) : (
+    <p style={{ fontSize: "20px", fontWeight: "bold" }}>Brand logo not available</p>
+  )}
+  
+  <a 
+    href="tel:18002022413" 
+    style={{ 
+      backgroundColor: "blue", 
+      color: "white", 
+      padding: "15px 25px", 
+      fontSize: "24px", 
+      fontWeight: "bold", 
+      textDecoration: "none", 
+      borderRadius: "8px",
+      marginTop: "10px",  // Adds spacing between logo and button
+      display: "inline-block"  // Ensures proper button alignment
+    }}
+  >
+    Call Now 18002022413
+  </a>
+</div>
 
       <p style={{ fontSize: "20px", lineHeight: "1.8", marginTop: "20px" }}>
         Our team of skilled technicians ensures top-notch repair and maintenance services, giving your AC a new life.
