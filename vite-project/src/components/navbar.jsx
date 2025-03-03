@@ -24,7 +24,6 @@ const Navbar = () => {
     "Haier",
   ];
 
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -102,12 +101,14 @@ const Navbar = () => {
                 className={`flex items-center w-full px-3 py-2 rounded-md transition-colors ${isDropdownOpen ? "bg-blue-100 text-blue-600" : "text-gray-600 hover:bg-blue-50 hover:text-blue-600"
                   }`}
               >
-                       <NavLink
-              to="/services"
-             
-            >
-              Services
-            </NavLink>
+                <NavLink
+                  to="/services"
+                  className={({ isActive }) =>
+                    `${isActive || isDropdownOpen ? " text-grey-600" : "text-gray-600"} px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
+                  }
+                >
+                  Services
+                </NavLink>
                 <ChevronDown
                   className={`ml-1 h-4 w-4 transition-transform ${isDropdownOpen ? "rotate-180" : ""
                     }`}
@@ -115,7 +116,7 @@ const Navbar = () => {
               </button>
 
               {isDropdownOpen && (
-                <div className="absolute left-0 mt-2 bg-white shadow-md rounded-md w-48 py-2">
+                <div className="absolute left-0 mt-2 bg-white shadow-md rounded-md w-48 py-2 z-50">
                   {brands.map((brand) => (
                     <NavLink
                       key={brand}
@@ -164,7 +165,7 @@ const Navbar = () => {
             >
               Home
             </NavLink>
-            
+
             <NavLink
               to="/testimonials"
               className={({ isActive }) =>
@@ -180,12 +181,14 @@ const Navbar = () => {
                 className={`flex items-center px-3 py-2 rounded-md transition-colors ${isDropdownOpen ? "bg-blue-100 text-blue-600" : "text-gray-600 hover:bg-blue-50 hover:text-blue-600"
                   }`}
               >
-                    <NavLink
-              to="/services"
-             
-            >
-              Services
-            </NavLink>
+                <NavLink
+                  to="/services"
+                  className={({ isActive }) =>
+                    `${isActive || isDropdownOpen ? " text-grey-600" : "text-gray-600"} px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
+                  }
+                >
+                  Services
+                </NavLink>
                 <ChevronDown
                   className={`ml-1 h-4 w-4 transition-transform ${isDropdownOpen ? "rotate-180" : ""
                     }`}
@@ -193,7 +196,7 @@ const Navbar = () => {
               </button>
 
               {isDropdownOpen && (
-                <div className="pl-4 space-y-1 mt-1">
+                <div className="pl-4 space-y-1 mt-1 bg-white shadow-md rounded-md w-full py-2 z-50">
                   {brands.map((brand) => (
                     <NavLink
                       key={brand}
