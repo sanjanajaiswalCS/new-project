@@ -2,14 +2,13 @@ import React from "react";
 import { useParams } from "react-router-dom";
 const Brand = () => {
   const { brandname } = useParams();
-
-  // Brand logos
+  console.log(brandname);
   const brandLogos = {
     samsung: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png",
     lg: "https://kreafolk.com/cdn/shop/articles/lg-logo-design-history-and-evolution-kreafolk_03aeb70a-1702-4330-a3d7-91c344688e97.jpg?v=1717725016&width=1024",
     voltas: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Voltas-Logo-PNG.png",
     daikin: "https://e7.pngegg.com/pngimages/269/383/png-clipart-logo-daikin-electronics-red-army-brand-daijin-blue-electronics.png",
-    symphony: "https://coolersonline.ae/wp-content/uploads/2022/03/WhatsApp_Image_2022-10-03_at_21.52.50-removebg-preview.png",
+    ogeneral: "https://coolersonline.ae/wp-content/uploads/2022/03/WhatsApp_Image_2022-10-03_at_21.52.50-removebg-preview.png",
     hitachi: "https://1000logos.net/wp-content/uploads/2018/01/Hitachi-logo.jpg",
     carrier: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Logo_of_the_Carrier_Corporation.svg/2560px-Logo_of_the_Carrier_Corporation.svg.png",
     mitsubishi: "https://upload.wikimedia.org/wikipedia/commons/b/b7/Mitsubishi-logo.png",

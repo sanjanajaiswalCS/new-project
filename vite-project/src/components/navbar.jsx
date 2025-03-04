@@ -12,7 +12,7 @@ const Navbar = () => {
     "Lg",
     "Voltas",
     "Daikin",
-    "Symphony",
+    "OGeneral",
     "Hitachi",
     "Carrier",
     "Mitsubishi",
