@@ -32,7 +32,7 @@ function App() {
           className="fixed bottom-6 right-6 bg-blue-600 text-white rounded-full p-4 shadow-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
         >
           <Phone className="h-5 w-5" />
-          <span className="font-semibold">Book Now</span>
+          <span className="font-semibold">1800-202-2413</span>
         </a>
       </div>
     </Router>
