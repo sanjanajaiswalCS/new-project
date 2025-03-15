@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 const Brand = () => {
   const { brandname } = useParams();
   console.log(brandname);
@@ -30,18 +31,18 @@ const Brand = () => {
 
   return (
     <div style={{ maxWidth: "900px", margin: "auto", padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      
-        <title>{`${formattedBrandName}AC Repair: Fast Service | 1800-202-2413 | Trusted Experts`}</title>
+     
+        <title>{`${formattedBrandName} AC SERVICE CENTER: Fast Service | 1800-202-2413 | Trusted Experts`}</title>
         <meta 
           name="description" 
           content={`Need ${formattedBrandName}AC repair now? Call 1800-202-2413 for quick, reliable service. Certified technicians, genuine parts, and guaranteed satisfaction.`} 
         />
         <meta 
-          name="keywords" 
-          content="AC repair, AC services, Samsung AC repair, LG AC service, Voltas AC maintenance, Daikin AC technician, Symphony cooling solutions, Hitachi air conditioner repair, Carrier AC service, Mitsubishi AC experts, Bluestar AC support, Whirlpool AC installation, Lloyd AC fixing, Godrej AC solutions, IFB air cooling repair, Haier AC maintenance, best AC service near me, 24/7 AC repair" 
-        />
+        name="keywords" 
+        content={`${formattedBrandName} AC Service Center In Mumbai, ${formattedBrandName} Air Conditioner Service Center, ${formattedBrandName} Service Center, ${formattedBrandName} AC Service Center Near Me, ${formattedBrandName} Call Center, ${formattedBrandName} Service Centre Number, ${formattedBrandName} Authorised Service Centre, ${formattedBrandName} AC Service Centre Near Me, ${formattedBrandName} AC Service Centre Number, ${formattedBrandName} Service Centre Near Me, ${formattedBrandName} AC Call Centre, ${formattedBrandName} AC Help Center, ${formattedBrandName} AC Authorised Service Centre, ${formattedBrandName} AC Service Center No, Service Center Of ${formattedBrandName} AC, ${formattedBrandName} Call Center Number, AC ${formattedBrandName} Service Centre, ${formattedBrandName} Authorised Service Center, ${formattedBrandName} Service Centre Contact Number, ${formattedBrandName} Service Centre Phone Number, ${formattedBrandName} Service Center No, ${formattedBrandName} AC Service Call Center, ${formattedBrandName} AC Service Center Phone Number, ${formattedBrandName} AC Call Center, ${formattedBrandName} Authorized Service Centre, ${formattedBrandName} AC Service Center Contact Number, ${formattedBrandName} Authorised Service Centre Near Me, ${formattedBrandName} AC Service Center Near Me Contact Number, ${formattedBrandName} Company Service Centre, ${formattedBrandName} AC Authorised Service Centre Near Me, ${formattedBrandName} Service Centre AC, ${formattedBrandName} Authorised Service Center Near Me, ${formattedBrandName} AC Service Centre Phone Number, ${formattedBrandName} Inverter AC Service Centre, ${formattedBrandName} AC Customer Care, ${formattedBrandName} AC Installation Customer Care, ${formattedBrandName} AC Toll Free No, ${formattedBrandName} AC Service Customer Care, ${formattedBrandName} AC Customer Care No, Customer Care ${formattedBrandName} AC, ${formattedBrandName} Customer Care AC, ${formattedBrandName} Customer Care Service, ${formattedBrandName} Freezer Customer Care, ${formattedBrandName} AC Toll Free, Customer Care No Of ${formattedBrandName} AC, ${formattedBrandName} AC Customer Care Service, AC ${formattedBrandName} Customer Care, ${formattedBrandName} Customer No, ${formattedBrandName} AC Helpline No, Customer Care Of ${formattedBrandName} AC, ${formattedBrandName} Window AC Customer Care, ${formattedBrandName} AC Repair Near Me, ${formattedBrandName} AC Service Near Me`}
+      />
         <meta name="robots" content="index, follow" />
-      
+        
       {/* Beautiful Brand Name */}
       <h1 style={{ textAlign: "center", fontSize: "36px", fontWeight: "bold", marginBottom: "20px", color: "#333" }}>
         {formattedBrandName} AC Service Center
