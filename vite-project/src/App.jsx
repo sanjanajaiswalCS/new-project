@@ -1,13 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Phone } from 'lucide-react';
-import Navbar from './components/navbar';
 import Home from './pages/home';
 import Services from './pages/services';
 import Testimonials from './pages/testinomial';
-import Footer from './components/footer';
+import Navbar from './components/Navbar';
 import Brand from './pages/Brand';
 import Contacts from './pages/Contacts';
+import Footer from './components/Footer';
+import About from './pages/About';
+import Privacy from './pages/Privacy';
+
 function App() {
   const brands = [
     "Voltas", "Daikin", "Samsung", "Haier", "Panasonic", "Blue Star",
@@ -20,9 +23,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/about" element={<About  />} />
           <Route path="/contact" element={<Contacts />} />
           <Route path="/:brandname" element={<Brand />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
         <Footer />
         

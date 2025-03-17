@@ -19,8 +19,8 @@ const Contacts = () => {
     },
     {
       icon: <Clock className="h-6 w-6" />,
-      title: "Working Hours",
-      content: "24/7 Emergency Service",
+      title: "Head Office",
+      content: "Mumbai",
       special: true
     },
     {

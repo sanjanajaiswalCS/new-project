@@ -5,9 +5,13 @@ const Footer = () => {
     <footer className="bg-gray-900 text-gray-300 py-12 mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <h3 className="text-lg font-semibold mb-4">Money Back Policy</h3>
+          <h3 className="text-lg font-semibold mb-4"> Refund Policy</h3>
           <p className="text-gray-400">
-            In the highly unlikely event that we are not able to fix your appliance, even for reasons beyond our control, we will refund the money.
+          At AtYourServiceSupport.com, refunds are available if we cannot provide a scheduled service or fail to meet agreed-upon standards. 
+
+No refunds will be issued for completed services, customer no-shows, or failure to meet service requirements.
+
+Refund requests must be made within 2 days via email and will be processed within 7 working days. Contact us at [toll free number] for assistance.
           </p>
         </div>
         

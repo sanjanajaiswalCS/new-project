@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone } from 'lucide-react';
+import Testimonials from './testinomial';
 
 const Services = () => {
   const services = [
@@ -77,7 +78,9 @@ const Services = () => {
           </div>
         ))}
       </div>
+      <Testimonials />
     </div>
+
   );
 };
 

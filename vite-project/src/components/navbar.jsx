@@ -9,7 +9,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const brands = [
     "Samsung",
-    "Lg",
+    "LG",
     "Voltas",
     "Daikin",
     "OGeneral",
@@ -22,6 +22,7 @@ const Navbar = () => {
     "Godrej",
     "Ifb",
     "Haier",
+    "Panasonic",
   ];
 
   const toggleMenu = () => {
@@ -88,19 +89,19 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
-              to="/testimonials"
+              to="/about"
               className={({ isActive }) =>
                 `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"} px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
               }
             >
-              Testimonials
+              About
             </NavLink>
             <div className="relative">
               <div className="flex items-center">
                 <NavLink
                   to="/services"
                   className={({ isActive }) =>
-                    `${isActive || isDropdownOpen ? "bg-blue-100 text-blue-600" : "text-gray-600"} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
+                    `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"} px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
                   }
                  
                 >
@@ -144,6 +145,14 @@ const Navbar = () => {
             >
               Contact
             </NavLink>
+            <NavLink
+              to="/privacy"
+              className={({ isActive }) =>
+                `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"} px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
+              }
+            >
+              Privacy Policy
+            </NavLink>
             <a
               href="tel:18002022413"
               className="bg-blue-600 text-white px-4 py-2 rounded-md flex items-center gap-2 hover:bg-blue-700 transition-colors"
@@ -171,13 +180,13 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
-              to="/testimonials"
+              to="/about"
               className={({ isActive }) =>
                 `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
               }
               onClick={() => setIsOpen(false)}
             >
-              Testimonials
+              About
             </NavLink>
             <div className="relative">
               <button
@@ -188,8 +197,9 @@ const Navbar = () => {
                 <NavLink
                   to="/services"
                   className={({ isActive }) =>
-                    `${isActive || isDropdownOpen ? " text-grey-600" : "text-gray-600"} px-3 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors`
+                    `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
                   }
+                  onClick={() => setIsOpen(false)}
                 >
                   Services
                 </NavLink>
@@ -219,6 +229,15 @@ const Navbar = () => {
                 </div>
               )}
             </div>
+            <NavLink
+              to="/privacy"
+              className={({ isActive }) =>
+                `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
+              }
+              onClick={() => setIsOpen(false)}
+            >
+              Privacy Policy
+            </NavLink>
             <NavLink
               to="/contact"
               className={({ isActive }) =>

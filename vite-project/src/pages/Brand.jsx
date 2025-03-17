@@ -17,7 +17,8 @@ const Brand = () => {
     lloyd: "https://img.etimg.com/thumb/width-1200,height-900,imgsize-288849,resizemode-75,msid-100319675/industry/cons-products/durables/lloyd-will-adopt-aggressive-pricing-strategy-to-gain-market-share-revenue-yogesh-gupta.jpg",
     godrej: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Godrej_Logo.svg/2560px-Godrej_Logo.svg.png",
     ifb: "https://seeklogo.com/images/I/ifb-logo-CDA98EC536-seeklogo.com.png",
-    haier: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Haier_logo.svg/2560px-Haier_logo.svg.png"
+    haier: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Haier_logo.svg/2560px-Haier_logo.svg.png",
+    panasonic:"https://kreafolk.com/cdn/shop/articles/panasonic-logo-design-history-and-evolution-kreafolk_e22aef50-03d3-44ad-9c51-839d87728434.jpg?v=1717725026&width=2048"
   };    
 
   // Ensure the brandname is lowercase and fetch the corresponding logo
@@ -25,9 +26,10 @@ const Brand = () => {
 
   // Format brand name to Title Case (e.g., "samsung" → "Samsung")
   const formattedBrandName = brandname
-    ? brandname.charAt(0).toUpperCase() + brandname.slice(1).toLowerCase()
-    : "Brand";
-
+  ? brandname.toLowerCase() === "lg" // Check if the brand name is "lg" (case-insensitive)
+    ? "LG" // Convert "lg" to "LG"
+    : brandname.charAt(0).toUpperCase() + brandname.slice(1).toLowerCase() // Capitalize the first letter and lowercase the rest
+  : "Brand"; // Default value if brandname is empty or undefined
   return (
     <div style={{ maxWidth: "900px", margin: "auto", padding: "20px", fontFamily: "Arial, sans-serif" }}>
      
