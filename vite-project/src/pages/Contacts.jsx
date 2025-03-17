@@ -1,5 +1,8 @@
 import React from 'react';
 import { Phone, Mail, Clock, MapPin } from 'lucide-react';
+import { Building } from "lucide-react";
+
+<Building className="h-6 w-6" />
 
 const Contacts = () => {
   const contactInfo = [
@@ -18,7 +21,7 @@ const Contacts = () => {
       buttonText: "Send Email"
     },
     {
-      icon: <Clock className="h-6 w-6" />,
+      icon: <Building className="h-6 w-6" />,
       title: "Head Office",
       content: "Mumbai",
       special: true
