@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Phone } from 'lucide-react';
 import Home from './pages/home';
 import Services from './pages/services';
+import Navbar from './pages/Navbar';
 import Brand from './pages/Brand';
 import Contacts from './pages/Contacts';
-import Footer from './components/Footer';
+import Footer from './pages/Footer';
 import About from './pages/About';
 import Privacy from './pages/Privacy';
-import Navbar from './pages/Navbar';
 
 function App() {
   const brands = [
