@@ -36,7 +36,7 @@ const Contacts = () => {
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold text-gray-900 mb-6">Contact Us</h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Get in touch with us today for professional AC services
+          Get in touch with us today for Efficient Resolution AC services
         </p>
       </div>
 
@@ -68,7 +68,7 @@ const Contacts = () => {
       <div className="bg-blue-600 rounded-2xl p-12 text-center text-white">
         <h2 className="text-3xl font-bold mb-6">Need Immediate Assistance?</h2>
         <p className="text-xl mb-8">
-          Our expert technicians are ready to help you 24/7
+          Our certified technician ready to help you 24/7
         </p>
         <a
           href="tel:18002022413"
