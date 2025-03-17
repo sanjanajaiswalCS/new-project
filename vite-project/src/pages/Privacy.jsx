@@ -50,7 +50,7 @@ function Privacy() {
           <p>We may update this Privacy Policy periodically, and changes will be posted here.</p>
 
           <h3 className="text-xl font-semibold text-gray-800">10. Contact Us</h3>
-          <p>For privacy-related inquiries, contact us at [Insert Contact Details].</p>
+          <p>For privacy-related inquiries, contact us at [1800-202-2413].</p>
         </div>
       </div>
     </div>

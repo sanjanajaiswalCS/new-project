@@ -40,7 +40,7 @@ function About() {
             <li>Service appointments can be booked through our website or customer support.</li>
             <li>Payment terms will be provided before service confirmation.</li>
             <li>We accept various payment methods, including credit/debit cards and online transfers.</li>
-            <li>Cancellations or rescheduling must be requested at least [Insert Timeframe] in advance.</li>
+            <li>Cancellations or rescheduling must be requested at least 12hours     in advance.</li>
           </ul>
           
           <h3 className="text-xl font-semibold text-gray-800">5. Warranty and Liability</h3>
@@ -54,13 +54,13 @@ function About() {
           <p>We reserve the right to refuse or cancel services due to safety concerns, unavailability of parts, or violation of these Terms.</p>
           
           <h3 className="text-xl font-semibold text-gray-800">7. Privacy Policy</h3>
-          <p>Your use of our Services is also governed by our Privacy Policy, available [Insert Link].</p>
+          <p>Your use of our Services is also governed by our Privacy Policy, available <a href="https://www.AtYourServiceSupport.com/privacy" className="font-semibold text-blue-600 underline" target="_blank" rel="noopener noreferrer">here</a>.</p>
           
           <h3 className="text-xl font-semibold text-gray-800">8. Changes to Terms</h3>
           <p>We may update these Terms periodically. Any changes will be posted on this page with an updated effective date.</p>
           
           <h3 className="text-xl font-semibold text-gray-800">9. Contact Us</h3>
-          <p>For any questions or concerns regarding these Terms, please contact us at [Insert Contact Details].</p>
+          <p>For any questions or concerns regarding these Terms, please contact us at [1800-202-2413].</p>
         </div>
       </div>
     </div>

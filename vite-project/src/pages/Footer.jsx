@@ -11,7 +11,7 @@ const Footer = () => {
 
 No refunds will be issued for completed services, customer no-shows, or failure to meet service requirements.
 
-Refund requests must be made within 2 days via email and will be processed within 7 working days. Contact us at [toll free number] for assistance.
+Refund requests must be made within 2 days via email and will be processed within 7 working days. Contact us at [1800-202-2413] for assistance.
           </p>
         </div>
         
