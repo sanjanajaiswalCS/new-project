@@ -22,7 +22,7 @@ function About() {
         
         <div className="text-left text-gray-600  space-y-4">
           <h3 className="text-xl font-semibold text-gray-800">1. Introduction</h3>
-          <p>Welcome to AtYourServiceSupport.com (“we,” “our,” “us”). These Terms of Service (“Terms”) govern your use of our website and services (“Services”). By accessing or using our Services, you agree to comply with these Terms. If you do not agree, please do not use our Services.</p>
+          <p>Welcome to AtYourServiceSupport.com. These Terms of Service (“Terms”) govern your use of our website and services (“Services”). By accessing or using our Services, you agree to comply with these Terms. If you do not agree, please do not use our Services.</p>
           
           <h3 className="text-xl font-semibold text-gray-800">2. Services Offered</h3>
           <p>We provide professional servicing, maintenance, and repair solutions. The availability of our services may vary based on location and scheduling.</p>

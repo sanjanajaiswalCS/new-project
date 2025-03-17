@@ -9,7 +9,7 @@ function Privacy() {
 
         <div className="text-left text-gray-600 mt-4 space-y-4">
           <h3 className="text-xl font-semibold text-gray-800">1. Introduction</h3>
-          <p>Welcome to AtYourServiceSupport.com (“we,” “our,” “us”). We respect your privacy and are committed to protecting it through this Privacy Policy.</p>
+          <p>Welcome to AtYourServiceSupport.com. We respect your privacy and are committed to protecting it through this Privacy Policy.</p>
 
           <h3 className="text-xl font-semibold text-gray-800">2. Information We Collect</h3>
           <ul className="list-disc ml-6">
