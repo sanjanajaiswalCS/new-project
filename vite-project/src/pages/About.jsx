@@ -62,6 +62,7 @@ function About() {
           
           <h3 className="text-xl font-semibold text-gray-800">9. Contact Us</h3>
           <p>For any questions or concerns regarding these Terms, please contact us at [1800-202-2413].</p>
+          <div className="flex flex-col items-center justify-center text-center p-6"> <h2 className="text-2xl font-bold mb-4">Business Relationship Proof</h2> <p className="text-lg font-medium">UDYAM-MH-18-0420836</p> <p className="text-lg font-medium">Owner Name: Abhishek Jaiswal</p> <p className="text-xl font-semibold mt-2">TIRUPATI ENTERPRISES</p> </div>
         </div>
       </div>
     </div>

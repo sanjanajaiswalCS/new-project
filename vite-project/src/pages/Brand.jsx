@@ -157,15 +157,7 @@ If your LG AC isn’t functioning as expected, it’s time for a professional ch
             <p key={index} className="mb-2">{text}</p>
           ))}
           <div>
-          <div className="flex flex-col items-center justify-center text-center p-6">
-  <h2 className="text-2xl font-bold mb-4">Business Relationship Proof</h2>
-  
-  <p className="text-lg font-medium">UDYAM-MH-18-0420836</p>
-  
-  <p className="text-lg font-medium">Owner Name: Abhishek Jaiswal</p>
-  
-  <p className="text-xl font-semibold mt-2">TIRUPATI ENTERPRISES</p>
-</div>
+          
 
           </div>
 
