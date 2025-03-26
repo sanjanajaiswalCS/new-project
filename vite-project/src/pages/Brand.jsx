@@ -90,44 +90,13 @@ const Brand = () => {
           Call Now 18002022413
         </a>
       </div>
+      <div className='text-sm'>
+      LG air conditioners are known for their advanced technology, energy efficiency, and reliable cooling performance. However, like any home appliance, regular servicing is essential to maintain their efficiency and longevity. Dust buildup, refrigerant leaks, and worn-out components can reduce the effectiveness of your AC, leading to higher electricity bills and potential breakdowns. Routine maintenance helps in improving cooling efficiency, extending the unit’s lifespan, and ensuring a healthy indoor environment by preventing the circulation of dust and allergens.18002022413
 
-      <p style={{ fontSize: "20px", lineHeight: "1.8", marginTop: "20px" }}>
-        Our team of skilled technicians ensures top-notch repair and maintenance services, giving your AC a new life.
-      </p>
+Common issues faced by LG AC owners include inadequate cooling, unusual noises, water leakage, foul odors, and electrical faults. These problems can arise due to clogged filters, low refrigerant levels, loose components, or blocked drainage pipes. Regular servicing resolves these issues by cleaning essential parts, checking for gas leaks, and ensuring optimal performance. Simple preventive measures such as cleaning air filters, maintaining proper ventilation, and keeping the outdoor unit free from dust can also contribute to your AC’s longevity and efficiency.18002022413
 
-      <div style={{ fontSize: "20px", lineHeight: "1.8" }}>
-        <ul>
-          <li>✔ Expert Technicians – Certified and trained professionals for accurate diagnosis.</li>
-          <li>✔ Same-Day Service – Quick and efficient repairs to restore cooling instantly.</li>
-          <li>✔ Affordable Pricing – Transparent rates with no hidden charges.</li>
-          <li>✔ Genuine Spare Parts – 100% original components for durability.</li>
-          <li>✔ Service Warranty – Guaranteed satisfaction with every repair.</li>
-        </ul>
-      </div>
-
-      <p style={{ fontSize: "20px", lineHeight: "1.8", marginTop: "20px", fontWeight: "bold" }}>
-        We provide AC Service with our expert technicians at your doorstep in Mumbai, Navi Mumbai, Thane.
-      </p>
-
-      {/* Services Section */}
-      <h3 style={{ fontSize: "22px", fontWeight: "bold", marginTop: "20px" }}>Services :-</h3>
-      <ul style={{ fontSize: "20px", lineHeight: "1.8" }}>
-        <li>✅ Installation & Uninstallation – Setting up new AC units or removing existing ones.</li>
-        <li>✅ General Maintenance – Cleaning filters, coils, and checking refrigerant levels.</li>
-        <li>✅ Repairs & Troubleshooting – Fixing issues like gas leaks, compressor failures, or electrical faults.</li>
-        <li>✅ Gas Refilling & Leak Repair – Checking and refilling refrigerant gas if required.</li>
-        <li>✅ Replacement of Parts – Changing faulty components like compressors, capacitors, or thermostats.</li>
-        <li>✅ Deep Cleaning – High-pressure cleaning of indoor and outdoor units.</li>
-        <li>✅ Duct Cleaning & Servicing – For central AC systems, ensuring clean and efficient airflow.</li>
-      </ul>
-
-      {/* Contact Section - Fixed */}
-      <div style={{ fontSize: "20px", lineHeight: "1.8", marginTop: "20px", fontWeight: "bold" }}>
-        <ul>
-          <li><a href="tel:18002022413">📞 Call Now: 18002022413</a></li>
-          <li>📅 Book a Service Appointment Today!</li>
-        </ul>
-      </div>
+If your LG AC isn’t functioning as expected, it’s time for a professional check-up. Our expert technicians provide quick, reliable, and affordable LG AC repair, gas refilling, maintenance, and installation services. We ensure your cooling system operates at peak efficiency, helping you stay comfortable all year round. Call us at 18002022413
+        </div>
       <div className="mt-8">
         <div className="mt-8 font-2">
           {[
@@ -187,7 +156,21 @@ const Brand = () => {
           ].map((text, index) => (
             <p key={index} className="mb-2">{text}</p>
           ))}
+          <div>
+          <div className="flex flex-col items-center justify-center text-center p-6">
+  <h2 className="text-2xl font-bold mb-4">Business Relationship Proof</h2>
+  
+  <p className="text-lg font-medium">UDYAM-MH-18-0420836</p>
+  
+  <p className="text-lg font-medium">Owner Name: Abhishek Jaiswal</p>
+  
+  <p className="text-xl font-semibold mt-2">TIRUPATI ENTERPRISES</p>
+</div>
+
+          </div>
+
         </div>
+    
       </div>
     </div>
   );
