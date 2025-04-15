@@ -90,12 +90,13 @@ const Brand = () => {
           Call Now 18002022413
         </a>
       </div>
-      <div className='text-sm'>
-      {formattedBrandName} air conditioners are known for their advanced technology, energy efficiency, and reliable cooling performance. However, like any home appliance, regular servicing is essential to maintain their efficiency and longevity. Dust buildup, refrigerant leaks, and worn-out components can reduce the effectiveness of your AC, leading to higher electricity bills and potential breakdowns. Routine maintenance helps in improving cooling efficiency, extending the unit’s lifespan, and ensuring a healthy indoor environment by preventing the circulation of dust and allergens.18002022413
+      <div className='text-base'>
+        <br />
+      {formattedBrandName} air conditioners are known for their advanced technology, energy efficiency, and reliable cooling performance. However, like any home appliance, regular servicing is essential to maintain their efficiency and longevity. Dust buildup, refrigerant leaks, and worn-out components can reduce the effectiveness of your AC, leading to higher electricity bills and potential breakdowns. Routine maintenance helps in improving cooling efficiency, extending the unit’s lifespan, and ensuring a healthy indoor environment by preventing the circulation of dust and allergens.
 
-Common issues faced by {formattedBrandName} AC owners include inadequate cooling, unusual noises, water leakage, foul odors, and electrical faults. These problems can arise due to clogged filters, low refrigerant levels, loose components, or blocked drainage pipes. Regular servicing resolves these issues by cleaning essential parts, checking for gas leaks, and ensuring optimal performance. Simple preventive measures such as cleaning air filters, maintaining proper ventilation, and keeping the outdoor unit free from dust can also contribute to your AC’s longevity and efficiency.18002022413
+<br/>Common issues faced by {formattedBrandName} AC owners include inadequate cooling, unusual noises, water leakage, foul odors, and electrical faults. These problems can arise due to clogged filters, low refrigerant levels, loose components, or blocked drainage pipes. Regular servicing resolves these issues by cleaning essential parts, checking for gas leaks, and ensuring optimal performance. Simple preventive measures such as cleaning air filters, maintaining proper ventilation, and keeping the outdoor unit free from dust can also contribute to your AC’s longevity and efficiency.
 
-If your {formattedBrandName} AC isn’t functioning as expected, it’s time for a professional check-up. Our expert technicians provide quick, reliable, and affordable {formattedBrandName} AC repair, gas refilling, maintenance, and installation services. We ensure your cooling system operates at peak efficiency, helping you stay comfortable all year round. Call us at 18002022413
+<br/>If your {formattedBrandName} AC isn’t functioning as expected, it’s time for a professional check-up. Our expert technicians provide quick, reliable, and affordable {formattedBrandName} AC repair, gas refilling, maintenance, and installation services. We ensure your cooling system operates at peak efficiency, helping you stay comfortable all year round. 
 
         </div>
       <div className="mt-8">

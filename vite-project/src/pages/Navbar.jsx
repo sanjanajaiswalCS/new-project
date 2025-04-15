@@ -107,35 +107,10 @@ const Navbar = () => {
                 >
                   Services
                 </NavLink>
-                <button
-                  onClick={toggleDropdown}
-                  className="p-2 text-gray-600 hover:text-blue-600 focus:outline-none"
-                >
-                  <ChevronDown
-                    className={`h-4 w-4 transition-transform ${isDropdownOpen ? "rotate-180" : ""}`}
-                  />
-                </button>
+             
               </div>
 
-              {isDropdownOpen && (
-                <div className="pl-4 space-y-1 mt-150 bg-white shadow-md rounded-md w-full py-2 z-50">
-                  {brands.map((brand) => (
-                    <NavLink
-                      key={brand}
-                      to={`/${brand.toLowerCase()}`}
-                      className={({ isActive }) =>
-                        `${isActive ? "bg-blue-100 text-blue-600" : "text-gray-600"} block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors`
-                      }
-                      onClick={() => {
-                        setIsDropdownOpen(false);
-                        setIsOpen(false); // Close the mobile menu after navigation
-                      }}
-                    >
-                      {brand}
-                    </NavLink>
-                  ))}
-                </div>
-              )}
+             
             </div>
             <NavLink
               to="/contact"
