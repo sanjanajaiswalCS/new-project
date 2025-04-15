@@ -6,7 +6,7 @@ const Services = () => {
   const services = [
     {
       title: 'AC Installation',
-      image: 'https://www.aireserv.com/us/en-us/aire-serv/_assets/expert-tips/images/Blog/asv-blog-10-common-1.webp',
+      image: 'https://t4.ftcdn.net/jpg/02/88/99/55/360_F_288995567_tlJhRceJcPolVLyYyTAXRFPKjftZTYQD.jpg',
       description: 'Seamless installations tailored to your home\'s unique setup.',
       features: [
         'Assess the ideal placement for optimal cooling',
