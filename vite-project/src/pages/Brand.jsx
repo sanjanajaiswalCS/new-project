@@ -159,12 +159,12 @@ const Brand = () => {
             <p key={index} className="mb-2">{text}</p>
           ))}
           <div>
-          
-
           </div>
 
         </div>
-    
+        <div className="  mt-5">
+        Disclaimer: Any product names, logos, brands, and other trademarks or images featured or referred to within at your service support website are the property of their respective trademark holders. Moreover at your service support is neither associated nor affiliated with any Companies, logos and images are being used only for representation purpose of post warranty repair and service. At your service support is an independent organization.
+        </div>
       </div>
     </div>
   );
