@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Phone } from 'lucide-react';
-import Home from './pages/Home';
 import Services from './pages/services';
 import Navbar from './pages/Navbar';
 import Brand from './pages/Brand';
@@ -9,7 +8,7 @@ import Contacts from './pages/Contacts';
 import Footer from './pages/Footer';
 import About from './pages/About';
 import Privacy from './pages/Privacy';
-
+import Home from './pages/home';
 function App() {
   const brands = [
     "Voltas", "Daikin", "Samsung", "Haier", "Panasonic", "Blue Star",
