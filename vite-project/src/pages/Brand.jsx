@@ -20,7 +20,7 @@ const Brand = () => {
     haier: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Haier_logo.svg/2560px-Haier_logo.svg.png",
     panasonic: "https://kreafolk.com/cdn/shop/articles/panasonic-logo-design-history-and-evolution-kreafolk_e22aef50-03d3-44ad-9c51-839d87728434.jpg?v=1717725026&width=2048"
   };
- 
+
   // Ensure the brandname is lowercase and fetch the corresponding logo
   const logoUrl = brandLogos[brandname?.toLowerCase()] || "";
 
@@ -45,14 +45,15 @@ const Brand = () => {
       <meta name="robots" content="index, follow" />
 
       {/* Beautiful Brand Name */}
-      <h1 style={{ textAlign: "center", fontSize: "36px", fontWeight: "bold", marginBottom: "20px", color: "#333" }}>
-        {formattedBrandName} AC Service Center
+      <h1  style={{ textAlign: "center", fontSize: "36px", fontWeight: "bold", marginBottom: "40px", marginTop:"10px",color: "#333" }}>
+        {formattedBrandName} AC  Repair &        Services
       </h1>
 
       {/* Header Section with Logo and Call Now Button */}
       <div
         style={{
           display: "flex",
+           marginBottom: "40px",
           justifyContent: "space-between",
           alignItems: "center",
           flexWrap: "wrap",  // Allows items to wrap on smaller screens
@@ -92,13 +93,33 @@ const Brand = () => {
       </div>
       <div className='text-base'>
         <br />
-      {formattedBrandName} air conditioners are known for their advanced technology, energy efficiency, and reliable cooling performance. However, like any home appliance, regular servicing is essential to maintain their efficiency and longevity. Dust buildup, refrigerant leaks, and worn-out components can reduce the effectiveness of your AC, leading to higher electricity bills and potential breakdowns. Routine maintenance helps in improving cooling efficiency, extending the unit’s lifespan, and ensuring a healthy indoor environment by preventing the circulation of dust and allergens.
 
-<br/><br />Common issues faced by {formattedBrandName} AC owners include inadequate cooling, unusual noises, water leakage, foul odors, and electrical faults. These problems can arise due to clogged filters, low refrigerant levels, loose components, or blocked drainage pipes. Regular servicing resolves these issues by cleaning essential parts, checking for gas leaks, and ensuring optimal performance. Simple preventive measures such as cleaning air filters, maintaining proper ventilation, and keeping the outdoor unit free from dust can also contribute to your AC’s longevity and efficiency.
+        Are you searching for a {formattedBrandName} AC repair service near you?<br />
+        We are an independent air conditioner service provider specializing in  {formattedBrandName}  AC repair, installation, and maintenance. <br />Whether you own a split AC, window AC, inverter AC, or a central cooling system, we provide expert solutions at your doorstep.
+        <div>
+          Common AC Problems We Fix:
 
-<br/><br/>If your {formattedBrandName} AC isn’t functioning as expected, it’s time for a professional check-up. Our expert technicians provide quick, reliable, and affordable {formattedBrandName} AC repair, gas refilling, maintenance, and installation services. We ensure your cooling system operates at peak efficiency, helping you stay comfortable all year round. 
+          <div className="ml-6 p-2">
+            •	AC not cooling or low cooling <br />
+            •	AC making unusual noises <br />
+            •	Water leakage from indoor unit <br />
+            •	AC not turning on <br />
+            •	Foul smell from AC vents <br />
+            •	AC gas leak and refill <br />
+            •	PCB or electrical component failure <br />
+          </div>
+          Our Services
+          <div className="ml-6 p-2">
+            •	Routine maintenance & annual servicing <br />
+            •	Gas refilling & leak repair <br />
+            •	PCB board repair & replacement <br />
+            •	Compressor and fan motor service <br />
+            •	AC installation & uninstallation <br />
+            •	Deep cleaning & filter sanitization <br />
+          </div>
 
         </div>
+      </div>
       <div className="mt-8">
         <div className="mt-8 font-2">
           {[
@@ -162,8 +183,8 @@ const Brand = () => {
           </div>
 
         </div>
-        <div className=" text-sm mt-5">
-        Disclaimer: Any product names, logos, brands, and other trademarks or images featured or referred to within at your service support website are the property of their respective trademark holders. Moreover at your service support is neither associated nor affiliated with any Companies, logos and images are being used only for representation purpose of post warranty repair and service. At your service support is an independent organization.
+        <div className=" mt-5">
+          Disclaimer: Any product names, logos, brands, and other trademarks or images featured or referred to within at your service support website are the property of their respective trademark holders. Moreover at your service support is neither associated nor affiliated with any Companies, logos and images are being used only for representation purpose of post warranty repair and service. At your service support is an independent organization.
         </div>
       </div>
     </div>
