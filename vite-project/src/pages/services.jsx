@@ -77,7 +77,7 @@ const Services = () => {
           </div>
         ))}
       </div>
-      <Testimonials />
+     
     </div>
 
   );
