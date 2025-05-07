@@ -74,7 +74,7 @@ const Brand = () => {
           <p style={{ fontSize: "20px", fontWeight: "bold" }}>Brand logo not available</p>
         )}
 
-        <a
+        {/* <a
           href="tel:18002022413"
           style={{
             backgroundColor: "blue",
@@ -89,7 +89,7 @@ const Brand = () => {
           }}
         >
           Call Now 18002022413
-        </a>
+        </a> */}
       </div>
       <div className='text-base'>
         <br />

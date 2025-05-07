@@ -203,10 +203,10 @@ const Navbar = () => {
                 >
                   Services
                 </NavLink>
-                <ChevronDown
+                {/* <ChevronDown
                   className={`ml-1 h-4 w-4 transition-transform ${isDropdownOpen ? "rotate-180" : ""
                     }`}
-                />
+                /> */}
               </button>
 
               {isDropdownOpen && (
