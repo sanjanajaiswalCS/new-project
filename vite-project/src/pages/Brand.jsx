@@ -4,21 +4,21 @@ const Brand = () => {
   const { brandname } = useParams();
   console.log(brandname);
   const brandLogos = {
-    samsung: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png",
-    lg: "https://kreafolk.com/cdn/shop/articles/lg-logo-design-history-and-evolution-kreafolk_03aeb70a-1702-4330-a3d7-91c344688e97.jpg?v=1717725016&width=1024",
-    voltas: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Voltas-Logo-PNG.png",
-    daikin: "https://e7.pngegg.com/pngimages/269/383/png-clipart-logo-daikin-electronics-red-army-brand-daijin-blue-electronics.png",
-    ogeneral: "https://coolersonline.ae/wp-content/uploads/2022/03/WhatsApp_Image_2022-10-03_at_21.52.50-removebg-preview.png",
-    hitachi: "https://1000logos.net/wp-content/uploads/2018/01/Hitachi-logo.jpg",
-    carrier: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Logo_of_the_Carrier_Corporation.svg/2560px-Logo_of_the_Carrier_Corporation.svg.png",
-    mitsubishi: "https://upload.wikimedia.org/wikipedia/commons/b/b7/Mitsubishi-logo.png",
-    bluestar: "https://logovtor.com/wp-content/uploads/2020/01/blue-star-limited-logo-vector.png",
-    whirlpool: "https://upload.wikimedia.org/wikipedia/commons/1/10/Whirlpool_Corporation_Logo.png",
-    lloyd: "https://img.etimg.com/thumb/width-1200,height-900,imgsize-288849,resizemode-75,msid-100319675/industry/cons-products/durables/lloyd-will-adopt-aggressive-pricing-strategy-to-gain-market-share-revenue-yogesh-gupta.jpg",
-    godrej: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Godrej_Logo.svg/2560px-Godrej_Logo.svg.png",
-    ifb: "https://seeklogo.com/images/I/ifb-logo-CDA98EC536-seeklogo.com.png",
-    haier: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Haier_logo.svg/2560px-Haier_logo.svg.png",
-    panasonic: "https://kreafolk.com/cdn/shop/articles/panasonic-logo-design-history-and-evolution-kreafolk_e22aef50-03d3-44ad-9c51-839d87728434.jpg?v=1717725026&width=2048"
+    samsung: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
+    lg: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
+    voltas: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
+    daikin: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
+    ogeneral: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
+    hitachi: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
+    carrier: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
+    mitsubishi: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
+    bluestar: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
+    whirlpool: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
+    lloyd: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
+    godrej: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
+    ifb: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
+    haier: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
+    panasonic: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png"
   };
 
   // Ensure the brandname is lowercase and fetch the corresponding logo

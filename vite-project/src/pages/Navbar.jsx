@@ -107,14 +107,14 @@ const Navbar = () => {
                 >
                   Services
                 </NavLink>
-                <button
+                {/* <button
                   onClick={toggleDropdown}
                   className="p-2 text-gray-600 hover:text-blue-600 focus:outline-none"
                 >
                   <ChevronDown
                     className={`h-4 w-4 transition-transform ${isDropdownOpen ? "rotate-180" : ""}`}
                   />
-                </button>
+                </button> */}
               </div>
 
               {isDropdownOpen && (
