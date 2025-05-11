@@ -4,9 +4,9 @@ const Brand = () => {
   const { brandname } = useParams();
   console.log(brandname);
   const brandLogos = {
-    samsung: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
-    lg: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
-    voltas: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
+    samsung: "https://images.openai.com/thumbnails/a2f7b186289fe796ccd8c292c01b759a.jpeg",
+    lg: "https://media.istockphoto.com/id/472343332/photo/white-air-conditioner.jpg?s=612x612&w=0&k=20&c=0z3GY-vDbQ7kWC8lw4vOeGQF488XghTAqq6Syjadg-E=",
+    voltas: "https://www.istockphoto.com/photo/white-air-conditioner-gm472343332-63331741",
     daikin: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
     ogeneral: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
     hitachi: "https://static.vecteezy.com/system/resources/previews/012/909/769/non_2x/air-conditioner-appliance-free-png.png",
@@ -46,7 +46,7 @@ const Brand = () => {
 
       {/* Beautiful Brand Name */}
       <h1  style={{ textAlign: "center", fontSize: "36px", fontWeight: "bold", marginBottom: "40px", marginTop:"10px",color: "#333" }}>
-        {formattedBrandName} AC  Repair &        Services
+        {formattedBrandName.replace(/-/g, " ").replace(/\b\w/g, (char) => char.toUpperCase())}
       </h1>
 
       {/* Header Section with Logo and Call Now Button */}

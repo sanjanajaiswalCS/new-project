@@ -65,6 +65,8 @@ function About() {
           <div className="flex flex-col items-center justify-center text-center p-6"> 
             <h2 className="text-xs font-bold mb-4">Business Relationship Proof</h2> 
             <p className="text-xs font-semibold mt-2">TIRUPATI ENTERPRISES</p> 
+            <p className="text-xs font-semibold mt-2">UDYAM-MH-18-0420836</p>
+            <p className="text-xs font-semibold mt-2">Owner : Abhishek Jaiswal</p>
             </div>
         </div>
       </div>
